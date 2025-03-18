@@ -1,0 +1,160 @@
+---
+import Image from "astro/components/Image.astro";
+import Foto from "../images/fotocurriculum.jpg";
+---
+<nav id="navbar" class="z-10 sticky top-0 w-screen bg-transparent flex flex-wrap justify-center gap-5 py-5">
+    <a href="#about"
+      class="rounded-3xl w-2/5 md:w-fit bg-blue-900 text-white text-lg md:text-base px-5 md:px-10 py-3 shadow-md shadow-blue-700 hover:scale-110 transition-all text-center">
+      Sobre mí
+    </a>
+    <a href="#projects"
+      class="rounded-3xl w-2/5 md:w-fit bg-blue-900 text-white text-lg md:text-base px-5 md:px-10 py-3 shadow-md shadow-blue-700 hover:scale-110 transition-all text-center">
+      Proyectos
+    </a>
+    <a href="#knowledge"
+      class="rounded-3xl w-2/5 md:w-fit bg-blue-900 text-white text-lg md:text-base px-5 md:px-10 py-3 shadow-md shadow-blue-700 hover:scale-110 transition-all text-center">
+      Conocimientos
+    </a>
+    <a href="#certificates"
+      class="rounded-3xl w-2/5 md:w-fit bg-blue-900 text-white text-lg md:text-base px-5 md:px-10 py-3 shadow-md shadow-blue-700 hover:scale-110 transition-all text-center">
+      Certificados
+    </a>
+  </nav>
+<header class="max-w-5xl mx-auto px-4" id="about">
+    <div class="w-full flex flex-col md:flex-row mt-16 md:mt-28 justify-center items-center gap-8">
+      <Image id="photo" src={Foto} alt="Foto de Luis Villar Roldán" class="w-40 h-40 md:w-[300px] md:h-[300px] rounded-full object-cover" />
+      <div>
+        <h2 class="text-amber-500 italic text-center text-5xl mt-5 mb-8">Luis Villar Roldán</h2>
+        <p class="text-lg md:text-2xl mt-5 mb-5 text-center">
+          <span class="oblique text-slate-400 text-base md:text-xl">-- Amante del desarrollo web --</span>
+          <br><br>
+          <span class="text-orange-300 font-extrabold italic">Apasionado de la tecnología</span> desde pequeño, ahora lo convierto en mi profesión. Con una mente <span class="text-orange-300 font-extrabold italic">curiosa y resiliente</span>, siempre estoy listo para <span class="text-orange-300 font-extrabold italic">aprender</span>, proponer soluciones y llevar ideas a la acción.
+          Me encanta el <span class="text-orange-300 font-extrabold italic">desarrollo web</span> y la tecnología en general. Disfruto enfrentando <span class="text-orange-300 font-extrabold italic">nuevos desafíos</span>, creando <span class="text-orange-300 font-extrabold italic">soluciones funcionales</span> y <span class="text-orange-300 font-extrabold italic">aprendiendo constantemente</span>.
+          Valoro el <span class="text-orange-300 font-extrabold italic">trabajo en equipo</span> y la oportunidad de crecer con cada proyecto.
+          Siempre estoy abierto a nuevas oportunidades y colaboraciones.
+        </p>
+      </div>
+    </div>
+    <h2 class="text-sky-500 text-3xl md:text-5xl mt-12 text-center mb-10">FullStack Developer</h2>
+</header>
+
+<div class="pb-10 pt-10 px-4 md:px-20 w-full mt-12 mb-12 mx-auto flex flex-wrap justify-center gap-4">
+    <a class="text-white m-10" href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/" target="_blank">
+        <div class="contact-target w-full sm:w-auto h-20 px-6 flex justify-center items-center bg-blue-900 rounded-2xl transition-all hover:scale-110 gap-2">
+        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" stroke-width="2"> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path> <path d="M8 11l0 5"></path> <path d="M8 8l0 .01"></path> <path d="M12 16l0 -5"></path> <path d="M16 16v-3a2 2 0 0 0 -4 0"></path> </svg>
+        Luis Villar Roldán
+        </div>
+    </a>
+    <a class="text-white m-10" href="https://github.com/VRLuis" target="_blank">
+        <div class="contact-target w-full sm:w-auto h-20 px-6 flex justify-center items-center bg-blue-900 rounded-2xl transition-all hover:scale-110 gap-2">
+        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" stroke-width="2"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+        VRLuis
+        </div>
+    </a>
+    <div class="contact-target m-10 w-full sm:w-auto h-20 px-6 flex justify-center items-center bg-blue-900 rounded-2xl transition-all hover:scale-110 text-white gap-2">
+        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>
+        luisvillarroldan1010@gmail.com
+        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
+    </div>
+
+</div>
+  
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.getElementById("navbar");
+        
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 150) {
+                navbar?.classList.add("scrolled");
+            } else {
+                navbar?.classList.remove("scrolled");
+            }
+        });
+    });
+
+    let mail = document.getElementById("mail");
+
+    mail?.addEventListener("click", function(){
+        navigator.clipboard.writeText('luisvillarroldan1010@gmail.com');
+        mail.innerHTML = `<svg id="tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M5 12l5 5l10 -10"></path></svg>`;
+        
+        setTimeout(function() {
+            mail.innerHTML = `<svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>`
+        },1500);
+    })
+  </script>
+  
+
+<style>
+    .nav{
+        a{
+            box-shadow: 0 0 25px #162447;
+        }
+    }
+
+    .contact-target{
+        box-shadow: 0 0 10px #309eff40;
+       
+    }
+
+    .scrolled {
+        transition: background-color 300ms ease, padding 300ms ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgba(17, 17, 61, 0.1);
+        backdrop-filter: blur(10px);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        z-index: 50;
+    }
+
+    .scrolled a {
+        box-shadow: 0 0 15px rgba(22, 36, 71, 0.8);
+        color: rgba(255, 255, 255, 0.8); 
+        padding: 10px 20px; 
+        margin: 0;
+        font-size: 14px;
+        border-radius: 20px;
+        transition: all 300ms ease;
+        text-decoration: none;
+        backdrop-filter: blur(5px);
+    }
+
+    .scrolled a:hover {
+        color: white;
+        background-color: rgba(48, 158, 255, 0.3);
+        transform: scale(1.05);
+    }
+
+    .scrolled:hover {
+        background-color: rgba(17, 17, 61, 0.9);
+    }
+
+    @media (max-width: 1000px) {
+        .scrolled {
+            padding: 10px 0;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .scrolled a {
+            font-size: 12px;
+            padding: 8px 15px;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 5px;
+        }
+
+        .scrolled a:hover {
+            color: white;
+            background-color: rgba(48, 158, 255, 0.4);
+        }
+    }
+
+</style>

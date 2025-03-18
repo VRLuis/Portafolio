@@ -1,0 +1,55 @@
+---
+import Image from 'astro/components/Image.astro';
+import PokeApi from '../images/VRPokeApi.png';
+---
+
+<section class="bg-blue-950 mx-auto max-w-screen-xl max-[1280px]:max-w-screen-lg mt-40 mb-40 transition-all p-10 sm:p-16 md:p-20 xl:p-28 w-full rounded-3xl text-white hover:scale-105 group" id="projects">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <h1 class="transition-all text-3xl sm:text-4xl group-hover:drop-shadow-[10px_10px_4px_#4e4eff]">Proyectos</h1>
+        <svg class="group-hover:drop-shadow-[10px_10px_4px_#4e4eff]" id="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M11.933 5h-6.933v16h13v-8"></path><path d="M14 17h-5"></path><path d="M9 13h5v-4h-5z"></path><path d="M15 5v-2"></path><path d="M18 6l2 -2"></path><path d="M19 9h2"></path></svg>    
+    </div>
+
+    <div class="max-w-full mt-16 group/content">
+        <div class="text-left pt-3 pb-3">
+            <h2 class="text-xl sm:text-2xl transition-all group-hover/content:drop-shadow-[10px_10px_4px_#f9df38]">VRPokeApi</h2>
+            <p class="mt-6 sm:mt-10 pr-0 sm:pr-3 text-sm sm:text-base">
+                Un proyecto de práctica hecho con la PokeApi oficial. 
+                En esta web puedes mirar las generaciones de Pokémon 
+                desde la primera hasta la novena, buscar un Pokémon 
+                por nombre o por número en la Pokédex, y buscar por 
+                tipo elemental.
+            </p>
+
+            <div class="flex flex-wrap mt-10 justify-center">
+                <span class="pl-5 pr-5 pt-2 pb-2 flex justify-between items-center rounded-xl mr-3 mb-3 project-tag bg-red-800 transition-all hover:scale-110 hover:drop-shadow-[0px_0px_25px_rgb(253,32,24)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path></svg>
+                    <label class="ml-2">En progreso...</label>
+                </span>
+                <br>
+                <span class="pt-2 pb-2 pl-5 pr-5 flex justify-between items-center rounded-xl mr-3 mb-3 project-tag bg-orange-800 transition-all hover:scale-110 hover:drop-shadow-[0px_0px_25px_rgb(235,107,23)]">
+                    <svg id="html" class="icons" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path></svg>
+                    <label class="ml-2">html</label>
+                </span>
+                <br>
+                <span class="pt-2 pb-2 pl-5 pr-5 flex justify-between items-center rounded-xl mr-3 mb-3 project-tag bg-blue-800 transition-all hover:scale-110 hover:drop-shadow-[0px_0px_25px_rgb(35,88,223)]">
+                    <svg id="css" class="icons" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path></svg>    
+                    <label class="ml-2">css</label>
+                </span>
+                <br>
+                <span class="pt-2 pb-2 pl-5 pr-5 flex justify-between items-center rounded-xl mr-3 mb-3 project-tag bg-yellow-700 transition-all hover:scale-110 hover:drop-shadow-[0px_0px_25px_rgb(235,107,23)]">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path></svg>
+                    <labe class="ml-2">javascript</label>
+                </span>
+            </div>
+        </div>
+        <a href="https://vrluis.github.io/VRPokeApi/" target="_blank">
+            <Image class="transition-all mx-auto mt-10 hover:scale-105 rounded-3xl w-full max-w-[400px] sm:max-w-[600px] h-auto" src={PokeApi} alt="Imagen de la VRPokeApi" />
+        </a>
+    </div>
+</section>
+
+<style>
+    section{
+        box-shadow: 0 0 25px #162447;
+    }
+</style>

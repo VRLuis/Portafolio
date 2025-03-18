@@ -1,0 +1,48 @@
+---
+import Image from 'astro/components/Image.astro';
+import FreeCodeCamp from '../images/freeCodeCamp.png';
+import Figma from '../images/Figma.png';
+import Cisco from '../images/Cisco.png';
+import Cambridge from '../images/B2English.jpg';
+---
+
+<section class="bg-blue-950 mx-auto max-w-screen-xl max-[1280px]:max-w-screen-lg mt-40 mb-40 transition-all p-10 sm:p-16 md:p-20 xl:p-28 w-full rounded-3xl text-white hover:scale-105 group" id="certificates">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <h1 class="transition-all text-3xl sm:text-4xl group-hover:drop-shadow-[10px_10px_4px_#4e4eff]">Certificados</h1>
+        <svg id="title-icon" class="group-hover:drop-shadow-[10px_10px_4px_#4e4eff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5"></path><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73"></path><path d="M6 9l12 0"></path><path d="M6 12l3 0"></path><path d="M6 15l2 0"></path></svg>    
+    </div>
+    <div class="max-w-screen-lg mt-28 flex justify-center md:justify-between flex-wrap flex-col md:flex-row">
+        <div class="max-w-md md:w-2/5 shadow-black text-center rounded-3xl px-5 py-10 my-10 bg-slate-900 shadow-2xl mt-7 hover:scale-105 transition-all">
+            <a href="https://www.freecodecamp.org/certification/fccea4f317a-f1ef-4df7-b4fd-072b06336424/responsive-web-design" target="_blank"><Image class="hover:scale-105 transition-all" src={FreeCodeCamp} alt="Imagen del certificado FreeCodeCamp" style="width: 400px; height: 300px; border-radius: 30px"/></a>
+            <div class="mt-10">
+                <h3 class="mt-10 text-2xl">Web Responsive Design</h3>
+            </div>
+        </div>
+        <div class="max-w-md md:w-2/5 shadow-black text-center rounded-3xl px-5 py-10 my-10 bg-slate-900 shadow-2xl mt-7 hover:scale-105 transition-all">
+            <a href="https://openwebinars.net/certificacion/buQaJHFO?type=png" target="_blank"><Image src={Figma} alt="Imagen del certificado de OpenWebinars" style="width: 400px; height: 300px; border-radius: 30px"/></a>
+            <div class="mt-10">
+                <h3 class="mt-10 text-2xl">Figma OpenWebinars</h3>
+            </div>
+        </div>
+        <div class="max-w-md md:w-2/5 shadow-black text-center rounded-3xl px-5 py-10 my-10 bg-slate-900 shadow-2xl mt-7 hover:scale-105 transition-all">
+            <a href="https://www.credly.com/badges/bedd2b72-fec2-4982-b06a-be58ce1b8878/linked_in_profile" target="_blank"><Image src={Cisco} alt="Imagen del certificado de Cisco Networks Basics" style="width: 300px; height: 300px; border-radius: 30px"/></a>
+            <div class="mt-10">
+                <h3 class="mt-10 text-2xl">Networks Basics</h3>
+            </div>
+        </div>
+        <div class="max-w-md md:w-2/5 shadow-black text-center rounded-3xl px-5 py-10 my-10 bg-slate-900 shadow-2xl mt-7 hover:scale-105 transition-all">
+            <a href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/details/certifications/" target="_blank"><Image src={Cambridge} alt="Imagen del certificado de B2 Cambridge" style="width: 300px; height: 400px; border-radius: 30px"/></a>
+            <div class="mt-10">
+                <h3 class="mt-10 text-2xl">English B2 Cambridge</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    section{
+        box-shadow: 0 0 25px #162447;
+    }
+
+    
+</style>
