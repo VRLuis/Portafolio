@@ -10,17 +10,21 @@
 
 @keyframes tiny{
     from{
-        scale: 25%;
+        scale: 75%;
+        opacity: 0;
+        filter: blur(10px);
     }
     to{
         scale: 100%;
+        opacity: 1;
     }
 }
 
 @keyframes slideInRight {
     from {
-        transform: translateX(100%);
+        transform: translateX(30%);
         opacity: 0;
+        filter: blur(10px);
     }
     to {
         transform: translateX(0);
@@ -29,16 +33,13 @@
 }
 
 .slideInRight{
-    animation-name: slideInRight;
-    animation-duration: 1s;
+    animation: slideInRight 1s ease-in forwards;
 }
 
 .show{
-    animation-name: show;
-    animation-duration: 1s;
+    animation: show 1s ease-in forwards;
 }
 
 .tiny{
-    animation-name: tiny;
-    animation-duration: 600ms;
+    animation: tiny 600ms ease-in forwards;
 }
