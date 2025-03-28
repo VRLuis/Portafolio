@@ -8,7 +8,37 @@
     }
 }
 
+@keyframes tiny{
+    from{
+        scale: 25%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInRight{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+}
+
 .show{
     animation-name: show;
-    animation-duration: 2s;
+    animation-duration: 1s;
+}
+
+.tiny{
+    animation-name: tiny;
+    animation-duration: 600ms;
 }
